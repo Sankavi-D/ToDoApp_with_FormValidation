@@ -42,22 +42,14 @@ function validateLogin(loginFormData) {
     }
     if (password === "") {
         passwordErrMsgEl.textContent = "Password Required*";
-    }
-    //function displayToDoApp() {
-        
+    }  
     loginButtonEl.onclick = function(){
         loginButtonEl.type = "button";
         toDoAppEl.href = "todoapp.html";
     };
-
-    //}
 }
 
 loginFormEl.addEventListener("submit", function(event) {
     event.preventDefault();
     validateLogin(loginFormData);
-   // if (userNameErrMsgEl.textContent !== "" && passwordErrMsgEl.textContent !== "") {
-      //  displayToDoApp();
-    //}
-    
 });
